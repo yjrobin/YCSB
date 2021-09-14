@@ -31,9 +31,14 @@ LICENSE file.
 
   <dependencies>
     <dependency>
+      <!-- <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${redis.version}</version> -->
       <groupId>redis.clients</groupId>
       <artifactId>jedis</artifactId>
       <version>${redis.version}</version>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/lib/jedis-2.9.0-fpga-SNAPSHOT.jar</systemPath>
     </dependency>
     <dependency>
       <groupId>site.ycsb</groupId>
